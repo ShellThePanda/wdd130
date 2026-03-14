@@ -14,6 +14,9 @@ aside {
 main img {
     width: 150px;
     height: auto;
+    border: 1px solid black;
+    padding: 1px;
+    box-shadow: 0 0 16px black;
 }
 
 aside img {
@@ -29,4 +32,15 @@ footer {
     margin-top: 32px;
     border-top: 1px solid green;
     text-align: center;
+}
+
+nav {
+    background-color: grey;
+    padding: 4px;
+    color: white;
+    display: block;
+}
+
+h1 {
+    color: black;
 }
