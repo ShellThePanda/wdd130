@@ -1,14 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 main {
     max-width: 840px;
 }
 
 aside {
     width: 360px;
-    margin: 16px;
-    border: 1px solid green;
-    padding: 16px;
-    background-color: orange;
-    color: red;
+    position: relative;
 }
 
 main img {
@@ -17,6 +19,8 @@ main img {
     border: 1px solid black;
     padding: 1px;
     box-shadow: 0 0 16px black;
+    float: right;
+    margin-left: 8px;
 }
 
 aside img {
@@ -47,4 +51,19 @@ nav a {
 
 h1 {
     color: black;
+}
+
+h2 {
+    position: absolute;
+    color: white;
+}
+
+/* Class Selectors */
+
+.box {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: lightgrey;
+    color: black;
+    border: 1px solid green;
 }
