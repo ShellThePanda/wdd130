@@ -1,12 +1,8 @@
 :root {
     --primary-color: #1F3A5F;
-    --secondary-color: #2CA6A4;
     --accent-color: #F4A261;
-    --accent-dark-color: #E76F51;
     --background-color: #F8FAFC;
     --surface-color: #FFFFFF;
-    --text-primary: #1A1A1A;
-    --text-secondary: #5F6C7B;
     --heading-font: 'Montserrat', sans-serif;
     --body-font: 'Open Sans', sans-serif;
 }
@@ -75,7 +71,7 @@ h1 {
     margin: 0;
     text-align: center;
     color: var(--primary-color);
-    background-color: #F8FAFC;
+    background-color: var(--background-color);
     left: 50%;
     transform: translateX(-50%);
 }
