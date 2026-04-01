@@ -84,3 +84,134 @@ h1 {
 .socialmedia a img {
     max-width: 32px;
 }
+
+header {
+    display: grid;
+    grid-auto-columns: 1fr 3fr;
+    padding: 32px 64px;
+    gap: 24px;
+    margin: 0;
+    width: 100%;
+    background-color: var(--background-color);
+}
+
+header nav {
+    grid-column-start: 2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav a {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    transition: .2s ease-in-out;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+header nav a:hover {
+    transition: .2s ease-in-out;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+header > a {
+    width: 100%;
+    max-width: min-content;
+}
+
+.hero {
+    width: 100%;
+    max-height: 640px;
+}
+
+main {
+    width: 100%;
+}
+
+.hero article {
+    transform: translate(-50%, 50%);
+    bottom: 50%;
+}
+
+.hero img {
+    max-height: inherit;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.history-cont {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.history-cont img {
+    max-width: 400px;
+}
+
+section.history {
+    gap: 8px;
+}
+
+.history-cont p {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.adventure-cont {
+    display: flex;
+    gap: 32px;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+section.adventure {
+    gap: 24px;
+}
+
+.adventure-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.adventure-item p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav.socialmedia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+nav.socialmedia a {
+    max-width: 32px;
+    max-height: 32px;
+}
