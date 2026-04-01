@@ -191,7 +191,7 @@ section.adventure {
     gap: 8px;
 }
 
-.adventure-item p {
+.adventure-item figurecaption {
     margin: 0;
     padding: 0;
     text-align: center;
