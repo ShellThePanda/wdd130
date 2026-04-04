@@ -1,0 +1,12 @@
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+}
+
+input,
+select,
+textarea {
+    margin-bottom: 32px;
+}
