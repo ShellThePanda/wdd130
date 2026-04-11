@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+      content="This is the contact us page for Dry Oar Rafting. Don't be shy to contact our team to help you!">
+    <meta name="author" content="Keon Serrano">
+    <title>Contact Us | Dry Oar Rafting</title>
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <header>
+        <a href="/">
+            <img src="images/rafting-logo.png" alt="Dry Oar Logo">
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <div class="company-info__cont">
+            <h2 class="company-name">Dry Oar Rafting</h2>
+
+            <p class="company-address">
+                123 Main Street<br>
+                Kolob, California
+            </p>
+
+            <p class="company-number">
+                +1 999 999 9999
+            </p>
+
+            <p class="company-email">
+                info@dryoar.com
+            </p>
+        </div>
+
+        <div class="contact-us__cont">
+            <img src="images/map-image.png" alt="Map showing company location">
+
+            <form class="contact-us__form">
+                <div class="contact-us__name">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Type full name here"
+                      required>
+                </div>
+                <div class="contact-us__email">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email"
+                      placeholder="Type email address here" required>
+                </div>
+                <fieldset class="contact-us__purpose">
+                    <legend>Message Purpose</legend>
+                    <div class="contact-us__radio"> <input type="radio" name="purpose" id="inquiry"
+                          value="inquiry">
+                        <label for="inquiry">General Inquiry</label>
+                    </div>
+                    <div class="contact-us__radio">
+                        <input type="radio" name="purpose" id="question" value="question">
+                        <label for="question">Reservation Question</label>
+                    </div>
+                    <div class="contact-us__radio">
+                        <input type="radio" name="purpose" id="suggestion" value="suggestion">
+                        <label for="suggestion">Website Suggestion</label>
+                    </div>
+                </fieldset>
+                <div class="contact-us__message">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" placeholder="Type here"
+                      required></textarea>
+                </div>
+                <div class="contact-us__subscribe">
+                    <input type="checkbox" name="subscribe" id="subscribe">
+                    <label for="subscribe">Subscribe me to the monthly newsletter</label>
+                </div>
+                <div class="contact-us__submit">
+                    <button type="submit">Send Message</button>
+                </div>
+            </form>
+        </div>
+        <div class="employee-list">
+            <h2 class="employee-list__title">
+                We Are Here to Serve You
+            </h2>
+            <div class="employee-list__cont">
+                <div class="employee-item">
+                    <img src="images/placeholder-image.png" alt="picture of employee">
+                    <span class="employee-item__name">Employee Profile</span>
+                </div>
+                <div class="employee-item">
+                    <img src="images/placeholder-image.png" alt="picture of employee">
+                    <span class="employee-item__name">Employee Profile</span>
+                </div>
+                <div class="employee-item">
+                    <img src="images/placeholder-image.png" alt="picture of employee">
+                    <span class="employee-item__name">Employee Profile</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© | 2026 | Dry Oar Rafting | Keon Serrano</p>
+        <nav class="socialmedia">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="images/facebook-icon.png" alt="Facebook Icon">
+            </a>
+            <a href="twitter.com" target="_blank">
+                <img src="images/x-icon.png" alt="X Icon">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="images/instagram-icon.png" alt="X Icon">
+            </a>
+        </nav>
+    </footer>
+</body>
+
+</html>

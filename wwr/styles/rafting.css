@@ -21,7 +21,7 @@ body {
 header,
 main,
 footer {
-    width: 840px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -45,12 +45,15 @@ article {
 
 .hero {
     position: relative;
+    width: 100%;
+    max-height: 640px;
 }
 
 .hero img {
     display: block;
     width: 100%;
     height: auto;
+    max-height: inherit;
 }
 
 h1 {
@@ -65,15 +68,15 @@ h1 {
 
 .hero article {
     position: absolute;
-    bottom: 20px;
+    bottom: 50%;
+    left: 50%;
     width: 95%;
     padding: 4px;
     margin: 0;
     text-align: center;
     color: var(--primary-color);
     background-color: var(--background-color);
-    left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, 50%);
 }
 
 .hero article img {
@@ -91,16 +94,20 @@ header {
     padding: 32px 64px;
     gap: 24px;
     margin: 0;
-    width: 100%;
     background-color: var(--background-color);
+}
+
+header > a {
+    width: 100%;
+    max-width: min-content;
 }
 
 header nav {
     grid-column-start: 2;
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 header nav a {
@@ -109,44 +116,30 @@ header nav a {
     align-items: center;
     justify-content: center;
     padding: 8px 16px;
-    transition: .2s ease-in-out;
     text-decoration: none;
     color: var(--primary-color);
+    transition: .2s ease-in-out;
 }
 
 header nav a:hover {
-    transition: .2s ease-in-out;
     background-color: var(--primary-color);
     color: var(--background-color);
 }
 
-header > a {
-    width: 100%;
-    max-width: min-content;
-}
-
-.hero {
-    width: 100%;
-    max-height: 640px;
-}
-
 main {
-    width: 100%;
-}
-
-.hero article {
-    transform: translate(-50%, 50%);
-    bottom: 50%;
-}
-
-.hero img {
-    max-height: inherit;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 section {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+section.history {
+    gap: 8px;
 }
 
 .history-cont {
@@ -159,18 +152,12 @@ section {
     max-width: 400px;
 }
 
-section.history {
-    gap: 8px;
-}
-
 .history-cont p {
     margin: 0;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+section.adventure {
+    gap: 24px;
 }
 
 .adventure-cont {
@@ -179,10 +166,6 @@ main {
     justify-content: space-around;
     align-items: center;
     width: 100%;
-}
-
-section.adventure {
-    gap: 24px;
 }
 
 .adventure-item {
@@ -199,9 +182,9 @@ section.adventure {
 
 footer {
     display: flex;
-    width: 100%;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 nav.socialmedia {
@@ -214,4 +197,114 @@ nav.socialmedia {
 nav.socialmedia a {
     max-width: 32px;
     max-height: 32px;
+}
+
+.company-info__cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.company-info__cont * {
+    margin: 4px 0;
+    padding: 0;
+}
+
+p.company-address {
+    margin: 4px 0;
+}
+
+h2.company-name {
+    margin: 8px 0;
+}
+
+.contact-us__cont {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+
+form.contact-us__form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contact-us__form > * {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+}
+
+.contact-us__subscribe {
+    gap: 8px;
+}
+
+fieldset.contact-us__purpose {
+    padding: 16px;
+}
+
+.contact-us__message {
+    flex-direction: column;
+    gap: 8px;
+}
+
+textarea#message {
+    height: 75px;
+    padding: 4px;
+}
+
+fieldset.contact-us__purpose {
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contact-us__radio {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.contact-us__form .contact-us__name input,
+.contact-us__form .contact-us__email input {
+    width: 100%;
+}
+
+label {}
+
+.contact-us__cont img {
+    max-width: 350px;
+    width: 100%;
+}
+
+.employee-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    background-color: var(--background-color);
+    padding: 32px;
+    margin-bottom: 8px;
+}
+
+.employee-list__cont {
+    display: flex;
+    gap: 32px;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.contact-us__cont {
+    margin: 16px;
+}
+
+.employee-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.company-info__cont {
+    margin-top: 16px;
 }
