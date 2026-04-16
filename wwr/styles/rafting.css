@@ -306,3 +306,167 @@ fieldset.contact-us__purpose {
 .company-info__cont {
     margin-top: 16px;
 }
+
+img.hero-image__bg {
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+}
+
+.hero-image {
+    position: relative;
+}
+
+.hero-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    padding: 24px 48px;
+    gap: 8px;
+}
+
+h2.hero-heading {
+    font-size: 48px;
+    text-shadow: 2px 1px 4px black;
+}
+
+.hero-container a {
+    padding: 8px 16px;
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--accent-color);
+    background: var(--primary-color);
+    border-radius: 4px;
+    transition: .2s ease-in-out;
+    border: 1px solid var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-container a:hover {
+    transition: .2s ease-in-out;
+    color: var(--primary-color);
+    background-color: var(--accent-color);
+}
+
+.newsletter-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 64px;
+    padding: 32px 0;
+}
+
+.newsletter-form form.contact-us__form {
+    display: flex;
+    gap: 16px;
+}
+
+.grid-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.grid-cont__item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.trips-schedule {
+    padding: 2rem;
+}
+
+.trips-schedule__heading {
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+}
+
+.trips-schedule__table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--body-font);
+}
+
+.trips-schedule__thead {
+    background-color: #f1f5f9;
+}
+
+.trips-schedule__row--header {
+    text-align: left;
+}
+
+.trips-schedule__cell {
+    padding: 0.75rem;
+    border: 1px solid #e5e7eb;
+}
+
+.trips-schedule__cell--head {
+    font-weight: 600;
+}
+
+.trips-schedule__tbody .trips-schedule__row:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+.trips-schedule__tbody .trips-schedule__row:hover {
+    background-color: #eef2f7;
+}
+
+.contact-us-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.contact-us__img-cont {
+    flex: 1;
+}
+
+.contact-us__img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.contact-us__content-cont {
+    display: flex;
+    flex: 1;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contact-us__heading {
+    font-size: 24px;
+}
+
+.contact-us__content {
+    margin: 0;
+    padding: 8px 0;
+}
+
+.contact-us__button {
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    text-decoration: none;
+    border-radius: 4px;
+    border: 1px solid var(--primary-color);
+    transition: .2s ease-in-out;
+}
+
+.contact-us__button:hover {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    transition: .2s ease-in-out;
+}
